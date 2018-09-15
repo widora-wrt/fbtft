@@ -65,7 +65,7 @@ static int init_display(struct fbtft_par *par)
 	/* ------------memory access control------------------------ */
 	write_reg(par, 0x3A, 0x55); /* 16bit pixel */
 	/* ------------frame rate----------------------------------- */
-	write_reg(par, 0xB1, 0x00, 0x1B);
+	write_reg(par, 0xB1, 0x00, 0x10);
 	/* ------------Gamma---------------------------------------- */
 	/* write_reg(par, 0xF2, 0x08); */ /* Gamma Function Disable */
 	write_reg(par, 0x26, 0x01);
